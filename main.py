@@ -31,7 +31,7 @@ def conta_somas(vetor):
             # Sum two number of the triple and discover the target value 
             x = - (vetor[i] + vetor[j])
 
-            # Check if the target unknows's numbers set
+            # Check if the target is in unknows's numbers set
             if x in unknows: total += 1
             
             # case not add in unknows's numbers set
@@ -98,6 +98,8 @@ def main():
 
     # PLOT: Poly Regression
     plt.plot(size, np.mean(epcohs, axis=0), c="#ff5900", label="Regressão Poly")
+
+    # PLOT: STM
     plt.fill_between(size, np.min(epcohs, axis=0), np.max(epcohs, axis=0), alpha=.3, facecolor="#ff5900", label="Desvio")
     
     # PLOT: Scatter
